@@ -14,13 +14,13 @@ const props = defineProps({
     type: Number,
     required: true,
   },
-  perPage: {
-    type: Number,
-    default: 2,
-  }
+  // perPage: {
+  //   type: Number,
+  //   default: 2,
+  // }
 })
 const page = computed(() => props.page)
-const perPage = computed(() => props.perPage)
+// const perPage = computed(() => props.perPage)
 onMounted(() => {
   watchEffect(() => {
     EventService.getEvents(3, page.value)
