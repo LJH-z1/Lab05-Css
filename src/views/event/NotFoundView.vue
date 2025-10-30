@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, withDefaults } from 'vue'
+import { defineProps } from 'vue'
 defineProps<{
   resource?: string
 }>()
